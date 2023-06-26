@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+:root{
+    --cor-principal: #2953A6;
+    --cor-fonte: black;
+    --cor-fundo: white;
+    --cor-secundaria: #021F59;
+    --cor-terciaria: #607EA6;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    margin: 1px 1px 1px 1px;
+    background-color: #2953A6;
+    color: white;
+    
+}
+div{
+    height: 75px;
+     text-align: center;
+     border: 1px solid;
+    
+}
+main{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 25px 100px 25px 100px;
+    
+    
+}
+.bx-menu{
+    margin: 20px;
+    font-size: 45px;
+    color: white;
+
+}
+.bx-medal{
+    margin: 20px;
+    font-size: 45px;
+    color: white;
+}
