@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+*{
+    margin: 0%;
+    padding: 0%;
+}
 :root{
     --cor-principal: #2953A6;
     --cor-fonte: black;
@@ -13,8 +17,7 @@ body{
 header{
     display: grid;
     grid-template-columns: 100px 1fr 100px;
-    margin: 1px 1px 1px 1px;
-    background-color: #2953A6;
+    background-color: #021F59;
     color: white;
     
 }
@@ -26,7 +29,7 @@ div{
 }
 main{
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr 1fr 1fr;
     margin: 25px 100px 25px 100px;
     
     
