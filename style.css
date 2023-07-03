@@ -12,9 +12,6 @@
     --cor-secundaria: #021F59;
     --cor-terciaria: #607EA6;
 }
-body{
-   
-}
 header{
     display: grid;
     grid-template-columns: 100px 1fr 100px;
