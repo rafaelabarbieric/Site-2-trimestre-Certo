@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time to play</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="boxicons.min.css">
+    <link rel="shortcut icon" href="faviacon/bx-medal.svg" type="image/x-icon">
+</head>
+<body>
+    <header id="titulo">
+        <nav class="nav-bar">
+        <div><i class='bx bx-medal' ></i>
+         </div>
+        <div >
+            <h1 id="tituloprincipal">TIME TO PLAY</h1>
+        </div>
+        <div class="mobile-menu-icon">
+            <button onclick="menuAbre()" class="bx bx-menu"></button>
+        </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul id="ajustes">
+                <li class="nav-item" id="cortitulo2"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="copa.html" class="nav-link">Copa do mundo</a></li>
+                <li class="nav-item"><a href="volei.html" class="nav-link">Vôlei</a></li>
+                <li class="nav-item"><a href="futebol.html" class="nav-link">Futebol</a></li>
+                <li class="nav-item"><a href="natacao.html"class="nav-link">Natação</a></li>
+            </ul>
+         </div>
+    </header>
+    <main id="main-secundario">
+        <div>
+            <h1 id="texto-secundario">Afastado do Santos, Soteldo se manifesta: "Em breve vou sair falando"</h1>
+            
+            <p id="texto-secundario">São Paulo - 02/07/2023 22h33</p>
+
+            <img id="imagem-secundaria" src="imagem/futebol2.jpg" alt="IMAGEM" height="450">
+
+            <p id="texto-secundario">O atacante Soteldo, <strong id="color2">afastado do elenco do Santos no último sábado</strong>, se manifestou pela primeira vez desde a punição com uma publicação em rede social na noite deste domingo</p>
+            <p id="texto-secundario">Com uma mensagem curta, afirmou que “ninguém sabe o que aconteceu” e que pretende dar sua versão em breve:</p>
+            <p id="texto-secundario">– Ninguém sabe o que foi que aconteceu, mas eu em breve vou sair falando. Por enquanto, podem falar o que vocês quiserem. Boa noite – escreveu Soteldo, usando o termo “pronto”, que em espanhol significa “breve”.</p>
+            <p id="texto-secundario">De acordo com fontes ouvidas pela reportagem, o jogador não quis treinar depois do jogo contra o Blooming, ainda no vestiário da Vila Belmiro, com os companheiros que foram reservas na última rodada da Sul-Americana. No dia seguinte, pediu para sair mais cedo do treinamento, mas não alegou nenhum problema físico.</p>
+            <img id="imagem-secundaria" src="imagem/futebol3.webp" alt="IMAGEM" height="500">
+            <p id="texto-secundario">A situação criou um problema extra para o <strong id="color2">Santos</strong>: o clube agora tenta desfazer um acordo com o Tigres, do México, para a compra de parte dos direitos do jogador.</p>
+            <p id="texto-secundario">A equipe brasileira recentemente anunciou o acerto e a permanência de Soteldo até 2027, mas o contrato ainda não foi assinado - oficialmente, o atacante está emprestado ao <strong id="color2">Santos</strong> até esta segunda-feira.</p>
+            <p id="texto-secundario"><strong id="color2">Turra foi questionado sobre o episódio</strong> envolvendo o venezuelano logo após a derrota do <strong id="color2">Santos</strong>para o Cuiabá, neste domingo, mas evitou se aprofunda</p>
+            <p id="texto-secundario">- Desde que cheguei deixei claro. Ninguém é maior que o <strong id="color2">Santos</strong>. Isso é um assunto de direção. Foi tomada a decisão. Eu tenho que me preocupar com os atletas que, hoje, fazem parte do plantel. Agradeço a compreensão neste aspecto, mas é isso que eu tenho para falar do atleta Soteldo.</p>
+            
+        </div>
+        <div id="tamanho">
+            <img id="imagempropaganda" src="imagem/propagandahbo.jpg" alt="IMAGEM" height="400">
+            <hr>
+            <a id="botao" href="https://www.hbomax.com/br/pt" target="_blank">ASSINE AGORA</a>
+            <img id="imagempropaganda" src="imagem/propagandastar.jpg" alt="IMAGEM" height="400">
+            <hr>
+            <a id="botao" href="https://www.starplus.com/pt-br?cid=DSS-Search-Google-71700000085922374-&s_kwcid=AL!8468!3!576493405907!p!!g!!canal%20do%20star%2B&gad=1&gclid=CjwKCAjw-7OlBhB8EiwAnoOEk-S_aGTZCcXEhBdDXU28HVT1CLwGfrIJX_i_BUo-qloMgyg1NvztkRoCytkQAvD_BwE&gclsrc=aw.ds"  target="_blank">ASSINE AGORA</a>  
+            <img id="imagempropaganda" src="imagem/propagandanetflix.jpg" alt="IMAGEM" height="290">
+            <hr>
+            <a id="botao" href="https://www.netflix.com/br/" target="_blank">ASSINE AGORA</a>
+            <img id="imagempropaganda" src="imagem/propagandasanta.jpg" alt="IMAGEM" height="400">
+            <hr>
+            <a id="botao" href="https://www.instagram.com/santadallah/" target="_blank">SAIBA MAIS</a>
+        </div>
+    </main>
+    <script>
+        function menuAbre() {
+    let menu = document.querySelector('.mobile-menu');
+    if(menu.classList.contains('open')){
+        menu.classList.remove('open');
+    }
+    else{
+        menu.classList.add('open');
+    }
+}
+    </script>
+</body>
+</html>

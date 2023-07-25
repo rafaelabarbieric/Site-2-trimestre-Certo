@@ -11,19 +11,26 @@
     --cor-fundo: white;
     --cor-secundaria: #021F59;
     --cor-terciaria: #607EA6;
+    --cor-quartenaria: #00065C;
 }
 header{
     display: grid;
-    grid-template-columns: 100px 1fr 100px;
     background-color: #021F59;
-    color: white;
+    box-shadow: 0px 3px 10px white;
 }
-
+.bx-medal{
+    display: flex;
+    margin-left: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
 div{
     margin-top: 10px;
     text-align: center;
-    border: 1px solid #2953A6;
-    
+    border: 1px solid #2953A6;   
 }
 #margem{
     text-align: justify;
@@ -32,9 +39,10 @@ div{
     height: 100px;
     margin-top: 2%;
 }
-#borda1{
-    border: 1px solid black;
+.borda1{
+  
 }
+
 #imagem{
     border-radius: 5%;
     margin: 1% ;
@@ -43,8 +51,64 @@ div{
     
 }
 #tituloprincipal{
-    margin-top: 1%;
+    margin-top: 11%;
+    color: white;
 }
+
+.mobile-menu{
+    display: none;
+    background-color: #00065C;
+    color: white;
+ }
+@media screen {
+    .nav-bar{
+        padding: 1.5rem;
+        height: 70px;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+   .mobile-menu ul{
+    font-family: 'Roboto', sans-serif white;
+    display: flex;
+    align-items: center;
+    margin-left: 700px;
+    width: 98%;
+   }
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .mobile-menu-icon{
+        display: block;
+        padding: 1rem ;
+    }
+    .mobile-menu .mobile-menu-icon button{
+        width: 25%;
+    }
+}
+.nav-item{
+  margin: 0 15px;
+  margin-bottom: 1rem;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: white;
+    font-weight: 400;
+}
+.open{
+    display: block;
+}
+#cortitulo2{
+    color: white;
+}
+
 
 main{
     display: grid;
@@ -72,4 +136,36 @@ p{
 }
 #tamanho{
  height: 100px;
+}
+#botao{
+    text-align: center;
+    color: beige;
+    background-color: #607EA6;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
+    border: 1px solid #607EA6 ;
+    border-radius: 10px;
+} 
+#imagempropaganda{
+    border-radius: 5%;
+    margin-top: 60px;
+}
+
+#main-secundario{
+    display: grid;
+    grid-template-columns: 4fr 1.5fr;
+    margin: 25px 100px 25px 100px;
+}
+#texto-secundario{
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+}
+#color2{
+    color: #021F59;
+}
+#imagem-secundaria{
+    margin: 2%;
 }
