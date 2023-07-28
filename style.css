@@ -32,25 +32,22 @@ div{
     text-align: center;
     border: 1px solid #2953A6;   
 }
-#margem{
+.margem{
     text-align: justify;
     margin-left: 25%;
     margin-right: 5%;
     height: 100px;
     margin-top: 2%;
 }
-.borda1{
-  
-}
 
-#imagem{
+.imagem{
     border-radius: 5%;
     margin: 1% ;
     margin-top: 5%;
     margin-bottom: 5%;
     
 }
-#tituloprincipal{
+.tituloprincipal{
     margin-top: 11%;
     color: white;
 }
@@ -105,14 +102,14 @@ div{
 .open{
     display: block;
 }
-#cortitulo2{
+.cortitulo2{
     color: white;
 }
 
 
 main{
     display: grid;
-    grid-template-columns: 3fr 1fr 1.5fr;
+    grid-template-columns: 1fr 3fr 1fr 1.5fr;
     margin: 25px 100px 25px 100px;
     
     
@@ -131,41 +128,48 @@ main{
 p{
     font-size: 19px;
 }
-#cortitulo{
+.cortitulo{
     color: #2953A6;
 }
-#tamanho{
+.tamanho{
  height: 100px;
 }
-#botao{
+.botao{
     text-align: center;
     color: beige;
     background-color: #607EA6;
     text-decoration: none;
     font-size: 20px;
-    margin-right: 20px;
-    border: 1px solid #607EA6 ;
+    margin-right: 100px;
+    margin-left: 90px;
+    border: 2px solid #607EA6 ;
     border-radius: 10px;
+    
 } 
-#imagempropaganda{
+.imagempropaganda{
     border-radius: 5%;
     margin-top: 60px;
 }
 
-#main-secundario{
+.main-secundario{
     display: grid;
     grid-template-columns: 4fr 1.5fr;
     margin: 25px 100px 25px 100px;
 }
-#texto-secundario{
+.texto-secundario{
     text-align: justify;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 2%;
 }
-#color2{
+.color2{
     color: #021F59;
 }
-#imagem-secundaria{
+.imagem-secundaria{
     margin: 2%;
+}
+.iconj{
+    margin-left: 70%;
+    margin-top: 10%;
+    height: 70px;
 }
