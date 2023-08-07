@@ -173,3 +173,18 @@ p{
     margin-top: 10%;
     height: 70px;
 }
+.redes img{
+    height: 35px;
+    filter: invert(1);
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--cor-secundaria);
+    margin-top: 11%;
+    color: white;
+}
+footer div{
+    margin-left: 2%;
+    margin-right: 2%;
+}
