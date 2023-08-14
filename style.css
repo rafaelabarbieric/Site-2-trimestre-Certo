@@ -209,7 +209,7 @@ footer div{
 #apenas{
     margin-right: 40px;
 }
-@media (max-width: 1600px){
+@media (max-width: 1800px){
     .imagempropaganda{
         border-radius: 5%;
         margin-top: 60px;
@@ -305,8 +305,10 @@ footer div{
 }
 
 #modifica{
-    margin-left: 175px;
+    margin-left: 150px;
 }
 #modifica2{
     margin-left: 160px;
 }
+
+
