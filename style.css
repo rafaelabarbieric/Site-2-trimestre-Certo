@@ -27,10 +27,12 @@ nav{
     justify-content: space-between;
     padding: 1.5rem 6rem;
 }
+#myDiv{
+    display: none;
+}
 div{
     margin-top: 10px;
     text-align: center;
-    border: 1px solid #2953A6;   
 }
 .margem{
     text-align: justify;
@@ -38,6 +40,7 @@ div{
     margin-right: 5%;
     height: 100px;
     margin-top: 2%;
+    border-bottom: 2px solid gray;
 }
 
 .imagem{
@@ -133,27 +136,31 @@ p{
     color: #2953A6;
 }
 .tamanho{
- height: 100px;
+    height: 100px;
 }
 .botao{
     text-align: center;
-    color: beige;
+    color: white;
     background-color: #607EA6;
     text-decoration: none;
     font-size: 20px;
     margin-right: 100px;
-    margin-left: 90px;
+    margin-left: 200px;
     border: 2px solid #607EA6 ;
     border-radius: 10px;
     
 } 
 .imagempropaganda{
     border-radius: 5%;
-    margin-top: 60px;
     height: 400px;
+    margin-left: 100px;
+    margin-top: 20px;
 }
 .imagempropaganda2{
     height: 209px;
+    border-radius: 5%;
+    margin-top: 60px;
+    margin-left: 100px;
 }
 
 .main-secundario{
@@ -171,7 +178,9 @@ p{
     color: #021F59;
 }
 .imagem-secundaria{
-    margin: 2%;
+    margin-top: 2%;
+    margin-left: 22%;
+    margin-right: 22%;
     height: 450px;
 }
 .imagem-secundaria2{
@@ -197,13 +206,107 @@ footer div{
     margin-left: 2%;
     margin-right: 2%;
 }
-@media screen and (max-width: 500px){
-    header{
-        display: grid;
-        background-color: #021F59;
-        box-shadow: 0px 1px 3px white;
+#apenas{
+    margin-right: 40px;
+}
+@media (max-width: 1600px){
+    .imagempropaganda{
+        border-radius: 5%;
+        margin-top: 60px;
+        height: 350px;
     }
-    main{
-        grid-template-columns: 0fr 1fr 0.25fr 0.5fr;
+    .imagempropaganda2{
+        height: 205px;
+        border-radius: 5%;
+        margin-top: 60px;
     }
+    .botao{
+        text-align: center;
+        color: beige;
+        background-color: #607EA6;
+        text-decoration: none;
+        font-size: 13px;
+        margin-right: 70px;
+        margin-left: 70px;
+        border: 2px solid #607EA6 ;
+        border-radius: 10px;
+        
+    } 
+    .redes img{
+        height: 30px;
+        filter: invert(1);
+    }
+    .iconj{
+        margin-left: 70%;
+        margin-top: 20%;
+        height: 65px;
+    }
+    .margem{
+        text-align: justify;
+        margin-left: 10%;
+        margin-right: 5%;
+        height: 100px;
+        margin-top: 2%;
+        border-bottom: 2px solid #212121;
+    }
+}
+
+#loader{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid var(--cor-terciaria);
+    border-radius: 50%;
+    border-top: 16px solid var(--cor-principal);
+    -webkit-animation:spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+   
+}
+
+#text_loader{
+    position: absolute;
+    left: 44%;
+    top: 58%;
+    color: var(--cor-terciaria);
+}
+
+@-webkit-keyframes spin{
+    0%{-webkit-transform: rotate(0deg);}
+    100%{-webkit-transform: rotate(360deg);}
+   
+    
+}
+@keyframes spin{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+    
+}
+
+.animate-bottom{
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes animatebottom{
+    from{bottom: -100px;opacity: 0;}
+    to{bottom: 0;opacity: 1;}
+}
+
+@keyframes animatebottom{
+    from{bottom: -100px;opacity: 0;}
+    to{bottom: 0;opacity: 1;}
+}
+
+#modifica{
+    margin-left: 175px;
+}
+#modifica2{
+    margin-left: 160px;
 }

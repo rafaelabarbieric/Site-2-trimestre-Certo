@@ -11,7 +11,11 @@
     <link rel="stylesheet" href="boxicons.min.css">
     <link rel="shortcut icon" href="faviacon/bx-medal.svg" type="image/x-icon">
 </head>
-<body>
+<body onload="myFunction()" style="margin: 0;">
+    <div id="loader"></div>
+    <div id="myDiv" class="animate-bottom">
+        <div class="container">
+
     <header class="titulo">
         <nav class="nav-bar">
         <div><i class='bx bx-medal' ></i>
@@ -34,7 +38,7 @@
          </div>
     </header>
     <main class="main-secundario">
-        <div>
+        <article>
             <h1 class="texto-secundario">Ana Marcela Cunha encerra parceria com técnico a menos de três semanas do Mundial</h1>
 
             <p class="texto-secundario">26/06/2023 - 15h55min</p>
@@ -51,25 +55,25 @@
             <p class="texto-secundario">De acordo com o COB, Ana Marcela deixou a Turquia, onde treinava com Possenti, e viajou para a Itália, onde seguirá sua preparação para o Mundial.</p>
             <p class="texto-secundario">— Ela seguiu viagem para a cidade de Livigno, na Itália, para treinamento em altitude visando à preparação para o Campeonato Mundial de Fukuoka, no Japão, onde fica até o embarque para a competição— registrou o comitê.</p>
             <p class="texto-secundario">—Fernando Possenti segue a programação junto às atletas de natação em Erzurum, na Turquia, também preparatória para o Mundial, até o dia 8 de julho. Depois vai para Antalya, também na Turquia, onde se encontra com os demais integrantes da seleção brasileira de natação e, de lá, segue para o Mundial— completou o COB.</p>
-        </div>
-        <div class="tamanho">
+        </article>
+        <aside class="tamanho">
             <img class="imagempropaganda2" src="imagem/propagandanetflix.jpg" alt="IMAGEM" >
-            <hr>
-            <a class="botao" href="https://www.netflix.com/br/" target="_blank">ASSINE AGORA</a>
+            
+            <a class="botao" href="https://www.netflix.com/br/" target="_blank">SAIBA MAIS</a>
             <img class="imagempropaganda" src="imagem/propagandasanta.jpg" alt="IMAGEM" >
-            <hr>
+            
             <a class="botao" href="https://www.instagram.com/santadallah/" target="_blank">SAIBA MAIS</a>
             <img class="imagempropaganda" src="imagem/propagandastar.jpg" alt="IMAGEM" >
-            <hr>
-            <a class="botao" href="https://www.starplus.com/pt-br?cid=DSS-Search-Google-71700000085922374-&s_kwcid=AL!8468!3!576493405907!p!!g!!canal%20do%20star%2B&gad=1&gclid=CjwKCAjw-7OlBhB8EiwAnoOEk-S_aGTZCcXEhBdDXU28HVT1CLwGfrIJX_i_BUo-qloMgyg1NvztkRoCytkQAvD_BwE&gclsrc=aw.ds"  target="_blank">ASSINE AGORA</a>
+            
+            <a class="botao" href="https://www.starplus.com/pt-br?cid=DSS-Search-Google-71700000085922374-&s_kwcid=AL!8468!3!576493405907!p!!g!!canal%20do%20star%2B&gad=1&gclid=CjwKCAjw-7OlBhB8EiwAnoOEk-S_aGTZCcXEhBdDXU28HVT1CLwGfrIJX_i_BUo-qloMgyg1NvztkRoCytkQAvD_BwE&gclsrc=aw.ds"  target="_blank">SAIBA MAIS</a>
             <img class="imagempropaganda" src="imagem/propagandahbo.jpg" alt="IMAGEM" >
-            <hr>
-            <a class="botao" href="https://www.hbomax.com/br/pt" target="_blank">ASSINE AGORA</a>   
-        </div>
+            
+            <a class="botao" href="https://www.hbomax.com/br/pt" target="_blank">SAIBA MAIS</a>   
+        </aside>
     </main>
     <footer>
         <div> 
-            <h1>TIME TO PLAY</h1>
+            <h2>TIME TO PLAY</h2>
         </div>
         <div class="redes">
             <img src="icon/instagram.png" alt="IMAGEM">
@@ -82,14 +86,26 @@
     </footer>
     <script>
         function menuAbre() {
-    let menu = document.querySelector('.mobile-menu');
-    if(menu.classList.contains('open')){
-        menu.classList.remove('open');
+        let menu = document.querySelector('.mobile-menu');
+        if(menu.classList.contains('open')){
+            menu.classList.remove('open');
+        }
+        else{
+            menu.classList.add('open');
+        }
     }
-    else{
-        menu.classList.add('open');
-    }
-}
+
+var myVar
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 1000);
+        }
+
+        function showPage(){
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+            document.getElementById("text_loader").style.display = "none";
+        }
     </script>
 </body>
 </html>

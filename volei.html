@@ -11,7 +11,11 @@
     <link rel="stylesheet" href="boxicons.min.css">
     <link rel="shortcut icon" href="faviacon/bx-medal.svg" type="image/x-icon">
 </head>
-<body>
+<body onload="myFunction()" style="margin: 0;">
+    <div id="loader"></div>
+    <div id="myDiv" class="animate-bottom">
+        <div class="container">
+
     <header class="titulo">
         <nav class="nav-bar">
         <div><i class='bx bx-medal' ></i>
@@ -34,7 +38,7 @@
          </div>
     </header>
     <main class="main-secundario">
-        <div>
+        <article>
             <h1 class="texto-secundario">Classificado, Brasil vence Tailândia na Liga das Nações feminina de vôle.</h1>
 
             <p class="texto-secundario">São Paulo - 02/07/2023 11h50</p>
@@ -52,25 +56,25 @@
             <p class="texto-secundario">O primeiro set começou com a Tailândia pontuando e ficando ligeiramente na frente do placar. O bloqueio de Thaísa foi fundamental para o Brasil passar na frente das adversárias, chegando ao set point com 19/24. Chatchu-On salvou o primeiro set point brasileiro com uma largadinha, mas Thaísa, de novo, virou a bola e fechou o placar.</p>
             <p class="texto-secundario">A Tailândia começou melhor no segundo set, mas Carol chegou bem para encaixar o bloqueio e pontuar para o Brasil. Com um ataque de Thaísa, as brasileiras seguiram coladas nas adversárias, até empatar e ultrapassar no placar com dois contra-ataques seguidos. <strong class="color2">Depois de nove pontos seguidos</strong>, a Tailândia voltou a pontuar, mas logo na sequência, Carol virou a bola para o Brasil. Depois de um erro de levantamento da Tailândia, e o Brasil teve o ponto do set, e fechou em 16/25.</p>
             <p class="texto-secundario">O terceiro set contou com o mesmo ritmo inicial da Tailândia, que começou pontuando. Depois de um bom rali, o Brasil pontuou de bloqueio e momentaneamente passou na frente no placar. A Tailândia explorou bem o bloqueio do Brasil no contra-ataque e encostou no marcador. Depois de anotar bons pontos seguidos, o Brasil cometeu dois erros na sequência, e a Tailândia encostou. <strong class="color2">Apesar do susto, as brasileiras fecharam o set em 23/25.</strong></p>
-        </div>
-        <div class="tamanho">
+        </article>
+        <aside class="tamanho">
             <img class="imagempropaganda" src="imagem/propagandastar.jpg" alt="IMAGEM" >
-            <hr>
-            <a class="botao" href="https://www.starplus.com/pt-br?cid=DSS-Search-Google-71700000085922374-&s_kwcid=AL!8468!3!576493405907!p!!g!!canal%20do%20star%2B&gad=1&gclid=CjwKCAjw-7OlBhB8EiwAnoOEk-S_aGTZCcXEhBdDXU28HVT1CLwGfrIJX_i_BUo-qloMgyg1NvztkRoCytkQAvD_BwE&gclsrc=aw.ds"  target="_blank">ASSINE AGORA</a>
+            
+            <a class="botao" href="https://www.starplus.com/pt-br?cid=DSS-Search-Google-71700000085922374-&s_kwcid=AL!8468!3!576493405907!p!!g!!canal%20do%20star%2B&gad=1&gclid=CjwKCAjw-7OlBhB8EiwAnoOEk-S_aGTZCcXEhBdDXU28HVT1CLwGfrIJX_i_BUo-qloMgyg1NvztkRoCytkQAvD_BwE&gclsrc=aw.ds"  target="_blank">SAIBA MAIS</a>
             <img class="imagempropaganda2" src="imagem/propagandanetflix.jpg" alt="IMAGEM" >
-            <hr>
-            <a class="botao" href="https://www.netflix.com/br/" target="_blank">ASSINE AGORA</a>
+            
+            <a class="botao" href="https://www.netflix.com/br/" target="_blank">SAIBA MAIS</a>
             <img class="imagempropaganda" src="imagem/propagandasanta.jpg" alt="IMAGEM" >
-            <hr>
+            
             <a class="botao" href="https://www.instagram.com/santadallah/" target="_blank">SAIBA MAIS</a>
             <img class="imagempropaganda" src="imagem/propagandahbo.jpg" alt="IMAGEM" >
-            <hr>
-            <a class="botao" href="https://www.hbomax.com/br/pt" target="_blank">ASSINE AGORA</a>
-        </div>
+            
+            <a class="botao" href="https://www.hbomax.com/br/pt" target="_blank">SAIBA MAIS</a>
+        </aside>
     </main>
     <footer>
         <div> 
-            <h1>TIME TO PLAY</h1>
+            <h2>TIME TO PLAY</h2>
         </div>
         <div class="redes">
             <img src="icon/instagram.png" alt="IMAGEM">
@@ -84,14 +88,26 @@
 </body>
 <script>
     function menuAbre() {
-let menu = document.querySelector('.mobile-menu');
-if(menu.classList.contains('open')){
-    menu.classList.remove('open');
-}
-else{
-    menu.classList.add('open');
-}
-}
+        let menu = document.querySelector('.mobile-menu');
+        if(menu.classList.contains('open')){
+            menu.classList.remove('open');
+        }
+        else{
+            menu.classList.add('open');
+        }
+    }
+
+var myVar
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 1000);
+        }
+
+        function showPage(){
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+            document.getElementById("text_loader").style.display = "none";
+        }
 </script>
 </body>
 </html>
